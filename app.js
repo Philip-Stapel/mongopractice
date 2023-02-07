@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-const port = 3000;
+const port = 6000;
 
 const { MongoClient } = require("mongodb");
 
