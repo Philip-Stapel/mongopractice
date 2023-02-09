@@ -7,7 +7,7 @@ describe("API Endpoints", () => {
   let db;
 
   beforeAll(async () => {
-    connection = await MongoClient.connect("mongodb://localhost:27017", {
+    connection = await MongoClient.connect("mongodb://localhost:27018", {
       useUnifiedTopology: true,
     });
     db = connection.db("addressbook");
@@ -157,7 +157,7 @@ describe("API Endpoints", () => {
 });
 
 afterEach(async () => {
-  connection = await MongoClient.connect("mongodb://localhost:27017", {
+  connection = await MongoClient.connect("mongodb://localhost:27018", {
     useUnifiedTopology: true,
   });
   db = connection.db("addressbook");
