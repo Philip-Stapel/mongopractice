@@ -3,22 +3,24 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const port = 6000;
-
 const { MongoClient } = require("mongodb");
+const { MongoMemoryServer } = require("mongodb-memory-server");
+const connectionDB = require("./connection");
+let collection;
+let entriesCollection;
+let db;
 
-const url = "mongodb://mongo:27017";
-const client = new MongoClient(url, { useUnifiedTopology: true });
-const dbName = "addressbook";
+async function startup() {
+  await connectionDB.init();
+  app.emit("dbConnected");
+  app.isDbConnected = true;
+  db = connectionDB.db;
+  collection = db.collection("documents");
+  entriesCollection = db.collection("entries");
+}
+startup();
 
 async function main() {
-  // Use connect method to connect to the server
-  await client.connect();
-  console.log("Connected successfully to server");
-  const db = client.db(dbName);
-  const collection = db.collection("documents");
-
-  const entriesCollection = db.collection("entries");
-
   app.post("/entries", async (req, res) => {
     const entry = {
       id: req.body.id,
@@ -60,7 +62,7 @@ async function main() {
       { $set: req.body }
     );
     if (result.modifiedCount === 0) {
-      res.status(404).send( "no matching records");
+      res.status(404).send("no matching records");
     } else {
       res.status(200).send("Entry updated successfully");
     }
