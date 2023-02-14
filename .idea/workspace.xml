@@ -6,120 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3a91ea54-4469-4415-975f-a11195c81be2" name="Changes" comment="first commit with mongo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/console/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/console/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/console/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/build/cli/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/core/build/cli/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/build/runJest.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/core/build/runJest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/environment/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/environment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/environment/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/expect-utils/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/expect-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/expect-utils/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/expect/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/expect/build/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/expect/build/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/expect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/expect/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/fake-timers/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/fake-timers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/fake-timers/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/globals/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/globals/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/globals/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/reporters/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/reporters/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/reporters/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/schemas/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/schemas/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/schemas/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/source-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/test-result/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/test-result/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/test-result/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/test-sequencer/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/test-sequencer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/test-sequencer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/transform/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/transform/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-jest/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-jest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-jest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-jest-hoist/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-jest-hoist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-jest-hoist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-preset-jest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-preset-jest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/diff-sequences/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/diff-sequences/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expect/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expect/build/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expect/build/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/expect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/expect/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-changed-files/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-changed-files/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-changed-files/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-circus/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-circus/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-circus/build/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-circus/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-circus/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-cli/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-cli/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-cli/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-config/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-config/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-config/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-diff/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-diff/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-docblock/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-docblock/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-each/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-each/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-each/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-environment-node/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-environment-node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-environment-node/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-get-type/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-get-type/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-leak-detector/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-leak-detector/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-leak-detector/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-matcher-utils/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-matcher-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-matcher-utils/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-message-util/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-message-util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-message-util/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-mock/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-mock/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-mock/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-regex-util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-regex-util/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-resolve-dependencies/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-resolve-dependencies/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-resolve-dependencies/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-resolve/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-resolve/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-runner/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-runner/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-runner/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-runtime/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-runtime/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-runtime/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-runtime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-runtime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-snapshot/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-snapshot/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-snapshot/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-util/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-util/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-validate/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-validate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-validate/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-watcher/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-watcher/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-watcher/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-worker/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-worker/build/workers/ChildProcessWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-worker/build/workers/ChildProcessWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-worker/build/workers/NodeThreadsWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-worker/build/workers/NodeThreadsWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-worker/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-worker/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connect.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connect.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection_pool.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection_pool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection_pool.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cmap/connection_pool.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/server.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/topology.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/topology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/topology.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/sdam/topology.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/mongodb.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/mongodb.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connect.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connection.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connection.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connection_pool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/src/cmap/connection_pool.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/src/sdam/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/src/sdam/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/src/sdam/topology.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/src/sdam/topology.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/write-file-atomic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/write-file-atomic/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/intergration.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/intergration.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="class" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,25 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/philipstapel/mongopractice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/Users/philipstapel/WebstormProjects/addressbook_mongo/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/philipstapel/WebstormProjects/addressbook_mongo/node_modules/prettier",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/philipstapel/mongopractice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/philipstapel/WebstormProjects/addressbook_mongo/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/philipstapel/WebstormProjects/addressbook_mongo/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -184,7 +73,7 @@
       <workItem from="1675436636327" duration="276000" />
       <workItem from="1675436923389" duration="142000" />
       <workItem from="1675437337870" duration="17213000" />
-      <workItem from="1676243088094" duration="1418000" />
+      <workItem from="1676243088094" duration="14273000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with mongo">
       <created>1675352520191</created>

@@ -36,5 +36,12 @@
     "nodemon": "^2.0.20",
     "supertest": "^6.3.3"
   },
-  "description": ""
+  "description": "",
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "6.0.3",
+      "arch": "x86_64"
+    }
+  }
 }
+

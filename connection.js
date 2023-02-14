@@ -12,7 +12,7 @@ class dbConnect {
       let mongodb = await MongoMemoryServer.create();
       url = mongodb.getUri();
     } else {
-      url = "mongodb://localhost:27017";
+      url = "mongodb://mongo:27017";
     }
 
     this.client = new MongoClient(url, { useUnifiedTopology: true });
