@@ -6,15 +6,14 @@ let port = 6000;
 if (process.env.NODE_ENV === "test") {
   port = 1000
 }
-const connectionDB = require("./connection");
-let collection;
+const dbConnect = require("./connection");
 let entriesCollection;
 let db;
 
 // function to connect to database
 async function startup() {
   console.log('starting')
-  await connectionDB.init();
+  await dbConnect.init();
   console.log('connected')
   // when connected emit 'dbconnected' so can be detected to start tests
   // also set isdbconnected to true in case the database is connected before the tests check for the emit above
@@ -22,8 +21,8 @@ async function startup() {
   app.isDbConnected = true;
 
   // set db to the db property of the connectionDB class
-  db = connectionDB.db;
-  collection = db.collection("documents");
+  db = dbConnect.db;
+
   entriesCollection = db.collection("entries");
 }
 

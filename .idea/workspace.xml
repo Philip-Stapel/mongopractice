@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a91ea54-4469-4415-975f-a11195c81be2" name="Changes" comment="first commit with mongo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__test__/intergration.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/intergration.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
