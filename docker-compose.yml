@@ -3,13 +3,14 @@ services:
   app:
     container_name: mongoyoutube
     restart: always
+
     build: .
     ports:
-      - '6000:6000'
+      - '5000:6000'
     links:
       - mongo
   mongo:
     container_name: mongo
     image: mongo
     ports:
-      - '27017:27017'
+      - '27018:27017'

@@ -2,25 +2,33 @@ const express = require("express");
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-const port = 6000;
-const { MongoClient } = require("mongodb");
-const { MongoMemoryServer } = require("mongodb-memory-server");
+let port = 6000;
+if (process.env.NODE_ENV === "test") {
+  port = 1000
+}
 const connectionDB = require("./connection");
 let collection;
 let entriesCollection;
 let db;
 
+// function to connect to database
 async function startup() {
+  console.log('starting')
   await connectionDB.init();
+  console.log('connected')
+  // when connected emit 'dbconnected' so can be detected to start tests
+  // also set isdbconnected to true in case the database is connected before the tests check for the emit above
   app.emit("dbConnected");
   app.isDbConnected = true;
+
+  // set db to the db property of the connectionDB class
   db = connectionDB.db;
   collection = db.collection("documents");
   entriesCollection = db.collection("entries");
 }
-startup();
 
 async function main() {
+  startup()
   app.post("/entries", async (req, res) => {
     const entry = {
       id: req.body.id,
