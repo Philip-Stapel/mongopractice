@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "NODE_ENV=test jest",
+    "test": "NODE_ENV=test jest --i",
     "dev": "nodemon server.js"
   },
   "jest": {
@@ -12,7 +12,8 @@
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
-    ]
+    ],
+    "testTimeout": 15000
   },
   "keywords": [],
   "author": "",
@@ -20,7 +21,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "jest-config": "^29.4.0",
-    "mongodb": "^5.0.1",
+    "mongodb": "5.0.1",
     "mongodb-memory-server": "^8.11.4",
     "prettier": "^2.8.3"
   },
@@ -39,8 +40,7 @@
   "description": "",
   "config": {
     "mongodbMemoryServer": {
-      "version": "6.0.3",
-      "arch": "x86_64"
+      "downloadUrl": "https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2004-6.0.3.tgz"
     }
   }
 }

@@ -3,6 +3,7 @@ services:
   app:
     container_name: mongoyoutube
     restart: always
+
     build: .
     ports:
       - '5000:6000'

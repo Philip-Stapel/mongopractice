@@ -3,9 +3,12 @@ const request = require("supertest");
 const mongodb = require("mongodb");
 const connectionDB = require("../../connection.js");
 let db;
+const { MongoMemoryServer } = require("mongodb-memory-server");
+
 const app = require("../../app.js");
 
-beforeEach(function (done) {
+// before each test is run check whether the database is connected, if it isn't wait for the app to emit that it is connected
+beforeAll(function (done) {
   if (app.isDbConnected) {
     db = connectionDB.db;
     process.nextTick(done);
@@ -16,10 +19,15 @@ beforeEach(function (done) {
     });
   }
 });
+
+// after each tests empty the database
 afterEach(async () => {
   await db.collection("entries").deleteMany({});
 });
 
+afterAll(async()=> {
+  await connectionDB.mongodb.stop()
+})
 describe("post /entries", () => {
   it("creates a new entry", async () => {
     const response = await request(app).post("/entries").send({
