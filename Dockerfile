@@ -1,15 +1,15 @@
-FROM node:18
-
-RUN apt-get install libcurl4
+FROM node:18.14.0-alpine
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci
 
-COPY . .
+RUN rm package-lock.json package.json
+
+COPY src src
 
 EXPOSE 6000
 
-CMD ["npm", "start"]
+CMD ["node", "src/app.js"]

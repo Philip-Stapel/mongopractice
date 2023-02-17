@@ -1,12 +1,7 @@
-const MongoClient = require("mongodb").MongoClient;
 const request = require("supertest");
-const mongodb = require("mongodb");
-const dbConnect = require("../../connection.js");
+const dbConnect = require("../connection.js");
+const app = require("../app.js");
 let db;
-const { MongoMemoryServer } = require("mongodb-memory-server");
-
-const app = require("../../app.js");
-
 // before each test is run check whether the database is connected, if it isn't wait for the app to emit that it is connected
 beforeAll(function (done) {
   if (app.isDbConnected) {
@@ -25,9 +20,10 @@ afterEach(async () => {
   await db.collection("entries").deleteMany({});
 });
 
-afterAll(async () => {
-  await dbConnect.mongodb.stop();
+afterAll(() => {
+  dbConnect.close();
 });
+
 describe("post /entries", () => {
   it("creates a new entry", async () => {
     const response = await request(app).post("/entries").send({
@@ -71,6 +67,7 @@ describe("GET /entries", () => {
         age: 30,
       },
     ]);
+
     const response = await request(app).get("/entries");
     expect(response.statusCode).toBe(200);
     expect(response.body).toHaveLength(2);

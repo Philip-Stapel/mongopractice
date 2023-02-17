@@ -2,32 +2,31 @@ const express = require("express");
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-let port = 6000;
-if (process.env.NODE_ENV === "test") {
-  port = 1000
-}
 const dbConnect = require("./connection");
-let entriesCollection;
+const port = process.env.NODE_ENV === "test" ? 1000 : 6000;
 let db;
+let entriesCollection;
+
+async function startup() {
+  await dbConnect.init();
+  dbConnect
+    .connect()
+    .then(() => {
+      db = dbConnect.db;
+      entriesCollection = db.collection("entries");
+      app.emit("dbConnected");
+      app.isdbConnected = true;
+      console.log("Database connected");
+    })
+    .catch((err) => {
+      console.error("Error connecting to database", err);
+    });
+}
 
 // function to connect to database
-async function startup() {
-  console.log('starting')
-  await dbConnect.init();
-  console.log('connected')
-  // when connected emit 'dbconnected' so can be detected to start tests
-  // also set isdbconnected to true in case the database is connected before the tests check for the emit above
-  app.emit("dbConnected");
-  app.isDbConnected = true;
-
-  // set db to the db property of the connectionDB class
-  db = dbConnect.db;
-
-  entriesCollection = db.collection("entries");
-}
 
 async function main() {
-  startup()
+  await startup();
   app.post("/entries", async (req, res) => {
     const entry = {
       id: req.body.id,
