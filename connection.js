@@ -8,23 +8,25 @@ const { MongoMemoryServer } = require("mongodb-memory-server");
 // class for connection to mongodb or mongomemoryserver
 class dbConnect {
   async init() {
-    let url;
-    // if in testing then create mongomemoryserver instance and get url
     if (process.env.NODE_ENV === "test") {
-      console.log('starting mms')
-      let mongodb = await MongoMemoryServer.create();
-      url = mongodb.getUri();
-      this.mongodb = mongodb
-      // if not in test then url of mongodb image
+      let mongod = await MongoMemoryServer.create();
+      this.url = mongod.getUri();
     } else {
-      url = "mongodb://mongo:27017";
+      this.url = "mongodb://mongo:27017";
     }
-// create client based on url and connect
-    let client = new MongoClient(url, { useUnifiedTopology: true });
-    await client.connect();
-    console.log(`connected to ${url}`);
-// set class property to access db from app and tets
-    this.db = client.db("addressbook");
+  }
+  connect() {
+    return MongoClient.connect(this.url, { useUnifiedTopology: true }).then(
+      (client) => {
+        this.client = client;
+        this.db = client.db("addressbook");
+        console.log(`Connected to ${this.url}`);
+      }
+    );
+  }
+
+  close() {
+    return this.client.close();
   }
 }
 
