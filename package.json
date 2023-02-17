@@ -1,11 +1,11 @@
 {
   "name": "addressbook",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node src/app.js",
     "test": "NODE_ENV=test jest --i",
-    "dev": "nodemon server.js"
+    "dev": "nodemon src/app.js"
   },
   "jest": {
     "verbose": true,
