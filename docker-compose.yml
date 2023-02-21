@@ -1,16 +1,19 @@
-version: '3'
+version: "3"
 services:
   app:
     container_name: mongoyoutube
     restart: always
-
+    volumes:
+      - files:/app
     build: .
     ports:
-      - '5000:6000'
+      - "5000:6000"
     links:
       - mongo
   mongo:
     container_name: mongo
     image: mongo
     ports:
-      - '27018:27017'
+      - "27018:27017"
+volumes:
+  files:
