@@ -13,7 +13,7 @@
 #CMD ["node", "./src/app.js"]
 
 
-FROM node:18.14.0
+FROM node:18
 
 WORKDIR /app
 
@@ -21,8 +21,10 @@ COPY package*.json ./
 
 RUN npm ci
 
-COPY src src
+COPY . .
 
-EXPOSE 6000
+RUN npm run build
 
-CMD ["node", "src/app.js"]
+EXPOSE 3000
+
+CMD ["node", "dist/index.js"]
