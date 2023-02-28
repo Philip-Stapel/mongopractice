@@ -5,9 +5,13 @@ import { Database } from "./connection";
 let database: Database;
 let entriesCollection: Collection;
 
+// startup connects to mongoDB database and returns Database object.
+
 async function startup(mongoURI?: string): Promise<Database> {
   database = new Database(mongoURI);
+  // creates Database object using mongoURI string parameter
   await database.connect();
+  // establishes connection to the database
   const addressBookDatabase = database.db;
   entriesCollection = addressBookDatabase.collection("entries");
 
